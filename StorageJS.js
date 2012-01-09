@@ -1,13 +1,13 @@
 var Storage = (function() {
     var Storage = function(type) {
         if (!(this instanceof Storage)) {
-			return new Storage(type);
-		}
+            return new Storage(type);
+        }
 
-		return this.init(type);
+        return this.init(type);
     },
 	
-	storageMap = {local: 'localStorage', session: 'sessionStorage'},
+    storageMap = {local: 'localStorage', session: 'sessionStorage'},
     storageKey = 'StorageJS',
     unitTime = {'ms': 1, 's': 1000, 'm': 1000 * 60, 'h': 1000 * 60 * 60, 'd': 1000 * 60 * 60 * 24};
 
